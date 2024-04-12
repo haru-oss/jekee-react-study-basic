@@ -3,7 +3,7 @@ export const ColorfulMessage = (props) => {
     const { color,children,fontSize } = props;
 
     const contentStyleB = {
-        color: color,
+        color,
         fontSize:fontSize,
 
 
