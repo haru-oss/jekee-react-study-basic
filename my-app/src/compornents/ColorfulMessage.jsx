@@ -1,6 +1,6 @@
-export const ColorfulMessage = (props) => {
+export const ColorfulMessage = ({ color,children,fontSize }) => {
 
-    const { color,children,fontSize } = props;
+    // const { color,children,fontSize } = props;
 
     const contentStyleB = {
         color,
@@ -11,3 +11,5 @@ export const ColorfulMessage = (props) => {
 
     return ( <p style={(contentStyleB)}>{children}</p>);
 }
+
+
