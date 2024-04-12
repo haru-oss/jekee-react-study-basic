@@ -8,8 +8,11 @@ export const App = () => {
     //  const [num,setNum]  = useState(0);
     //  const [ステート名,ステートを変更する為の更新関数]  = useState(ステートの初期値);
     const onClickCountUp = () =>{
-        setNum(num +1);
-        setNum(num +1);
+        setNum((prev)=>prev+1);
+        setNum((prev)=>prev+1);
+        // setNum((prev)=>prev+1);
+        // setNum((自動的にstateが入る（num）)=>state+1);
+        // setNum(num +1);
     };
 
 
