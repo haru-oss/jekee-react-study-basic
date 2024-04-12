@@ -8,5 +8,5 @@ export const ColorfulMessage = (props) => {
     };
 
     return (
-    <p style={(contentStyleB)}>{props.msg}</p>);
+    <p style={(contentStyleB)}>{props.children}</p>);
 }
