@@ -1,11 +1,15 @@
+import { useState } from "react";
+
 import { ColorfulMessage } from "./compornents/ColorfulMessage";
 
 
 export const App = () => {
-
-    const onClickbutton = () =>{
-        alert("くっそ！！！")
-    }
+     const [num,setNum]  = useState(0);
+    //  const [num,setNum]  = useState(0);
+    //  const [ステート名,ステートを変更する為の更新関数]  = useState(ステートの初期値);
+    const onClickCountUp = () =>{
+        setNum(num +1);
+    };
 
 
     return (
@@ -16,7 +20,8 @@ export const App = () => {
         <ColorfulMessage   color="blue"  fontSize="18px">元気ですか？</ColorfulMessage>
         <ColorfulMessage   color="green"  fontSize="18px">黙れ！！！！！</ColorfulMessage>
 
-        <button onClick={onClickbutton}>  ボタン</button>
+        <button onClick={onClickCountUp}> カウントアップ </button>
+        <p>{num}</p>
       </div>
   );
 };
