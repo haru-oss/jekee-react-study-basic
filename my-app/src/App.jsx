@@ -9,6 +9,7 @@ export const App = () => {
     //  const [ステート名,ステートを変更する為の更新関数]  = useState(ステートの初期値);
     const onClickCountUp = () =>{
         setNum(num +1);
+        setNum(num +1);
     };
 
 
